@@ -3,8 +3,7 @@ Nama Kelompok:
 - Putu Cahya Purnama / 231712249
 - Adrial Ignatius Andi Lolo / 231712552
 
-Pembuatan website Toko Kelontong (TolOng) untuk tugas Ujian Tengah Semester. Sistem yang dibangun adalah toko online menggunakan Next.js dengan komponen pembeli dan admin.
-
+Pembuatan website Toko Kelontong (TolOng) untuk tugas Ujian Tengah Semester.
 Link GitHub:
 https://github.com/Skupits/uts_siweeb.git
 
