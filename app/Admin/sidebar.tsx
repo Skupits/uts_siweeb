@@ -27,7 +27,7 @@ export default function Sidebar() {
       <div className="flex flex-col justify-between h-full">
         <nav className="space-y-2">
           <Link
-            href="/dashboard"
+            href="/Admin"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard")
@@ -39,7 +39,7 @@ export default function Sidebar() {
             Dashboard
           </Link>
           <Link
-            href="/dashboard/kelolaInformasiBarang"
+            href="/Admin/kelolaInformasiBarang"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/kelolaInformasiBarang")
@@ -51,7 +51,7 @@ export default function Sidebar() {
             Kelola Informasi Barang
           </Link>
           <Link
-            href="/dashboard/kelolaTransaksi"
+            href="/Admin/kelolaTransaksi"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/kelolaTransaksi")
@@ -63,7 +63,7 @@ export default function Sidebar() {
             Kelola Transaksi
           </Link>
           <Link
-            href="/dashboard/kelolaPersediaan"
+            href="/Admin/kelolaPersediaan"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/kelolaPersediaan")
@@ -75,7 +75,7 @@ export default function Sidebar() {
             Kelola Persediaan
           </Link>
           <Link
-            href="/dashboard/kelolaLaporan"
+            href="/Admin/kelolaLaporan"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/kelolaLaporan")
@@ -87,7 +87,7 @@ export default function Sidebar() {
             Kelola Laporan
           </Link>
           <Link
-            href="/dashboard/barang"
+            href="/Admin/barang"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/barang")
@@ -99,7 +99,7 @@ export default function Sidebar() {
             Barang
           </Link>
           <Link
-            href="/dashboard/transaksi"
+            href="/Admin/transaksi"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/transaksi")
@@ -111,7 +111,7 @@ export default function Sidebar() {
             Transaksi
           </Link>
           <Link
-            href="/dashboard/detailTransaksi"
+            href="/Admin/detailTransaksi"
             className={clsx(
               "flex items-center gap-3 px-4 py-2 rounded-lg",
               isActive("/dashboard/detailTransaksi")
@@ -123,7 +123,7 @@ export default function Sidebar() {
             Detail Pesanan
           </Link>
           <Link
-            href="/"
+            href="/Auth/Login"
             className="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-green-700 mt-auto"
           >
             <ArrowLeft size={20} />

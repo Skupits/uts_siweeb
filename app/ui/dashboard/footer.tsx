@@ -10,11 +10,11 @@ export default function Footer() {
         
         {/* Logo & Kontak */}
         <div>
-          <Image src="/logo.png" alt="Logo" width={120} height={50} className="mb-4" />
-          <p className="text-sm">info@sushiceria.com</p>
+          <Image src="/2.png" alt="Logo" width={120} height={50} className="mb-4" />
+          <p className="text-sm">TolOng@kelontong.com</p>
           <p className="text-sm mt-1">(021) 12345678</p>
           <p className="text-xs mt-4 text-gray-500">
-            © {new Date().getFullYear()} Sushi Ceria. Expect the unexpected.
+            © {new Date().getFullYear()} TolOng. Expect the unexpected.
           </p>
         </div>
 
@@ -22,9 +22,9 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-2">Navigasi</h3>
           <ul className="space-y-1 text-sm text-gray-500">
-            <li><a href="#" className="hover:underline">Beranda</a></li>
-            <li><a href="#" className="hover:underline">Menu</a></li>
-            <li><a href="#" className="hover:underline">Tentang Kami</a></li>
+            <li><a href="/dashboard" className="hover:underline">Home</a></li>
+            <li><a href="/dashboard/shop" className="hover:underline">Shop</a></li>
+            <li><a href="/dashboard/aboutUS" className="hover:underline">About Us</a></li>
           </ul>
         </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* Form Newsletter */}
         <div>
-          <h3 className="font-semibold mb-2 uppercase">Join Our Tribe</h3>
+          <h3 className="font-semibold mb-2 uppercase">Join Our Member</h3>
           <p className="text-sm text-gray-500 mb-4">Masukkan email kamu untuk update menarik!</p>
           <form className="flex items-center border-b border-gray-400">
             <input
