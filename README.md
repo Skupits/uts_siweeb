@@ -9,6 +9,7 @@ Link GitHub:
 https://github.com/Skupits/uts_siweeb.git
 
 Link Deploy:
+https://uts-siweeb.vercel.app/
 
 
 
