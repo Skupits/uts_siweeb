@@ -4,6 +4,11 @@ Nama Kelompok:
 - Adrial Ignatius Andi Lolo / 231712552
 
 Pembuatan website Toko Kelontong (TolOng) untuk tugas Ujian Tengah Semester.
+Adapun fitur yang di miliki website kami ialah:
+- Autentikasi: login untuk admin dan user (hanya tampilan + logika redirect)
+- Halaman pembeli: Home, Shop, About, Contact, Detail Produk
+- Halaman admin: Dashboard, Daftar Produk, Daftar Transaksi
+- Komponen reusable: Navbar, Footer
 Link GitHub:
 https://github.com/Skupits/uts_siweeb.git
 
@@ -11,8 +16,7 @@ Link Deploy:
 https://uts-siweeb.vercel.app/
 
 
-
 Pembagian Tugas:
 - Adrial Ignatius Andi Lolo (Pengerjaan bagian Autentikasi)
 - Putu Cahya Purnama (Pengerjaan bagian Pembeli)
-- Richardo Mario Martin (Pengerjaan bagian Admin)
+- Richardo Mario Martin (Pengerjaan bagian Admin)
