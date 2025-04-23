@@ -1,5 +1,18 @@
-## Next.js App Router Course - Starter
+Nama Kelompok:
+- Richardo Mario Martin / 231712234
+- Putu Cahya Purnama / 231712249
+- Adrial Ignatius Andi Lolo / 231712552
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Pembuatan website Toko Kelontong (TolOng) untuk tugas Ujian Tengah Semester. Sistem yang dibangun adalah toko online menggunakan Next.js dengan komponen pembeli dan admin.
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+Link GitHub:
+https://github.com/Skupits/uts_siweeb.git
+
+Link Deploy:
+
+
+
+Pembagian Tugas:
+- Adrial Ignatius Andi Lolo (Pengerjaan bagian Autentikasi)
+- Putu Cahya Purnama (Pengerjaan bagian Pembeli)
+- Richardo Mario Martin (Pengerjaan bagian Admin)
