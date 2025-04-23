@@ -2,44 +2,40 @@ import Link from 'next/link';
 
 export default function TolongLandingPage() {
   return (
-    <div className="min-h-screen bg-[#EDE1CD] flex items-center justify-center">
-      <div className="w-full max-w-3xl text-center relative overflow-hidden bg-[#164A24] rounded-xl">
-        <div className="absolute w-full h-full top-0 left-0">
-          <svg viewBox="0 0 800 400" className="w-full h-full">
-            <path
-              d="M0,300 C150,200 650,200 800,300 L800,400 L0,400 Z"
-              fill="#97AE84"
-            />
-            <path
-              d="M0,350 C200,250 600,250 800,350 L800,400 L0,400 Z"
-              fill="#EDE1CD"
-            />
-          </svg>
+    <div className="min-h-screen bg-[#164A24] flex items-center justify-center relative overflow-hidden">
+      {/* SVG latar belakang */}
+      <div className="absolute inset-0 z-0">
+        <svg viewBox="0 0 800 400" className="w-full h-full">
+          <path
+            d="M0,200 C150,100 650,100 800,200 L800,400 L0,400 Z"
+            fill="#6b8f71"
+          />
+          <path
+            d="M0,280 C250,180 550,180 800,280 L800,400 L0,400 Z"
+            fill="#EDE1CD"
+          />
+        </svg>
+      </div>
+
+      {/* Konten utama */}
+      <div className="relative z-10 flex flex-col items-center text-center">
+        <h1 className="text-white text-4xl font-extrabold mb-6 font-[cursive]">To1Ong</h1>
+
+        <div className="w-48 h-48 rounded-full bg-[#EDE1CD] flex items-center justify-center mb-8 shadow-md">
+          <img src="/2.png" alt="Logo" className="w-28 h-28" />
         </div>
 
-        <div className="relative z-10 py-16 px-6">
-          <h1 className="text-4xl font-bold text-white mb-6 font-[cursive]">To1Ong</h1>
-
-          <div className="w-40 h-40 mx-auto rounded-full bg-[#EDE1CD] flex items-center justify-center mb-6">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
-              alt="Cat Icon"
-              className="w-24 h-24"
-            />
-          </div>
-
-          <div className="flex justify-center gap-6">
-            <Link href="/Auth/Login">
-            <button className="bg-[#164A24] text-white border border-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+        <div className="flex gap-6">
+          <Link href="/Auth/Login">
+            <button className="bg-[#164A24] text-white border border-white px-6 py-2 rounded-full hover:bg-green-900 transition">
               Sign In
             </button>
-            </Link>
-            <Link href="/Auth/Register">
-            <button className="bg-[#164A24] text-white border border-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+          </Link>
+          <Link href="/Auth/Register">
+            <button className="bg-[#164A24] text-white border border-white px-6 py-2 rounded-full hover:bg-green-900 transition">
               Sign Up
             </button>
-            </Link>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
