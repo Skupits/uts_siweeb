@@ -249,3 +249,4 @@ export const inventory = [
     location: "Rak 5E",
   },
 ];
+export {categories,teamData,inventory,transactions,products}

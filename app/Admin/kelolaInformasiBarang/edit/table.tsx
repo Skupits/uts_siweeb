@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Plus, X } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigations";
 
 export default function TableTambahBarang({ id }: { id: string }) {
   const router = useRouter();
