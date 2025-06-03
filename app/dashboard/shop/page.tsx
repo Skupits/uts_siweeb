@@ -1,4 +1,4 @@
-import ImageSlider from "@/app/ui/dashboard/ImageSlider";
+import ImageSlider from "@/app/ui/user/ImageSlider";
 import CategoryCarousel from "@/app/ui/dashboard/KategoriCarousel";
 import ProductCard from "@/app/ui/dashboard/productCard";
 import { products } from "@/app/lib/placeholder-data";
