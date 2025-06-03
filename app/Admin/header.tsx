@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { users } from "@/app/lib/placeholder-data";
 
 export default function DashboardHeader() {
@@ -11,13 +11,7 @@ export default function DashboardHeader() {
       <div className="container mx-auto flex items-center justify-end gap-4">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full overflow-hidden">
-            <Image
-              src={users.image}
-              alt={users.name}
-              width={36}
-              height={36}
-              className="object-cover w-full h-full"
-            />
+            
           </div>
           <span className="text-lg font-semibold">{users.name}</span>
         </div>
