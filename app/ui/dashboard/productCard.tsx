@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Heart, Star } from "lucide-react";
-import { formatPrice } from "@/lib/FormatPrice";
+import { formatPrice } from "@/app/lib/FormatPrice";
 import Link from 'next/link';
 
 interface ProductCardProps {

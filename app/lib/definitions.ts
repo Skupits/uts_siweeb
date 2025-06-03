@@ -86,3 +86,18 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+export type Transaksi ={
+  id_transaksi:Int16Array;
+  id_produk:Int16Array;
+  nama_pembeli:string;
+  tanggal: string;
+  total_harga:number;
+};
+export type Produk ={
+  id_produk:Int16Array;
+  nama_produk:string;
+  harga: string;
+  stok: Int16Array;
+  foto:string;
+  deskripsi:string;
+};

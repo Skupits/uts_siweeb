@@ -216,3 +216,59 @@ export function InvoicesTableSkeleton() {
     </div>
   );
 }
+// Skeleton row for a single product
+export function ProductRowSkeleton() {
+  return (
+    <tr className="border-b border-gray-100 last-of-type:border-none">
+      <td className="px-4 py-4">
+        <div className="h-5 w-6 rounded bg-gray-200 animate-pulse" />
+      </td>
+      <td className="px-4 py-4">
+        <div className="h-5 w-48 rounded bg-gray-200 animate-pulse" />
+      </td>
+      <td className="px-4 py-4">
+        <div className="h-5 w-24 rounded bg-gray-200 animate-pulse" />
+      </td>
+      <td className="px-4 py-4">
+        <div className="flex items-center gap-3">
+          <div className="h-6 w-6 rounded bg-gray-200 animate-pulse" />
+          <div className="h-6 w-6 rounded bg-gray-200 animate-pulse" />
+          <div className="h-6 w-6 rounded bg-gray-200 animate-pulse" />
+        </div>
+      </td>
+    </tr>
+  );
+}
+
+// Full table skeleton with header
+export function ProductTableSkeleton() {
+  return (
+    <div className="mt-6 w-full overflow-hidden rounded-lg border border-gray-200 bg-white">
+      <div className="p-4">
+        <div className="h-6 w-40 rounded bg-gray-200 animate-pulse mb-4" />
+        <div className="h-10 w-64 rounded bg-gray-200 animate-pulse mb-4" />
+      </div>
+      <table className="min-w-full text-sm">
+        <thead className="bg-gray-100 text-left font-medium text-gray-600">
+          <tr>
+            <th className="px-4 py-3">ID Barang</th>
+            <th className="px-4 py-3">Nama Barang</th>
+            <th className="px-4 py-3">Harga</th>
+            <th className="px-4 py-3">Aksi</th>
+          </tr>
+        </thead>
+        <tbody className="bg-white">
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+          <ProductRowSkeleton />
+        </tbody>
+      </table>
+    </div>
+  );
+}
+

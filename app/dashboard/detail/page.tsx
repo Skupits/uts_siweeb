@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { formatPrice } from "@/lib/FormatPrice"; // pastikan kamu punya fungsi ini
+import { formatPrice } from "@/app/lib/FormatPrice"; // pastikan kamu punya fungsi ini
 import { useParams } from "next/navigation";
 
 export default function ProductDetail() {

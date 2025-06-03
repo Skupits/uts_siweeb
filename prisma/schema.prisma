@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model customers {
+  id        String @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name      String @db.VarChar(255)
+  email     String @db.VarChar(255)
+  image_url String @db.VarChar(255)
+  invoices invoices[]
+}
+
+model grocery_market {
+  id                Int       @id @default(autoincrement())
+  product_name      String    @db.VarChar(100)
+  category          String?   @db.VarChar(50)
+  price             Decimal   @db.Decimal(10, 2)
+  quantity_in_stock Int
+  supplier          String?   @db.VarChar(100)
+  expiration_date   DateTime? @db.Date
+}
+
+model invoices {
+  id          String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  customer_id String   @db.Uuid
+  amount      Int
+  status      String   @db.VarChar(255)
+  date        DateTime @db.Date
+  customer customers @relation(fields:[customer_id], references:[id])
+}
+
+model playing_with_neon {
+  id    Int    @id @default(autoincrement())
+  name  String
+  value Float? @db.Real
+}
+
+model revenue {
+  month   String @unique @db.VarChar(4)
+  revenue Int
+}
+
+model users {
+  id       String @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name     String @db.VarChar(255)
+  email    String @unique
+  password String
+}
+
+model produk {
+  id_produk   Int         @id @default(autoincrement())
+  nama_produk String      @db.VarChar(255)
+  harga       Decimal     @db.Decimal(10, 2)
+  stok        Int
+  foto        String?     @db.VarChar(255)
+  deskripsi   String?
+  transaksi   transaksi[]
+}
+
+model transaksi {
+  id_transaksi Int      @id @default(autoincrement())
+  id_produk    Int?
+  nama_pembeli String   @db.VarChar(255)
+  tanggal      DateTime @db.Date
+  total_harga  Decimal  @db.Decimal(10, 2)
+  produk       produk?  @relation(fields: [id_produk], references: [id_produk], onDelete: NoAction, onUpdate: NoAction)
+}
