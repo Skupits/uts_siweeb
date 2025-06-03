@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { user } from "@/app/lib/placeholder-data";
+import { users } from "@/app/lib/placeholder-data";
 
 export default function DashboardHeader() {
-  if (!user) return null; 
+  if (!users) return null; 
 
   return (
     <header className="bg-green-900 text-white py-3 px-4">
@@ -12,14 +12,14 @@ export default function DashboardHeader() {
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <Image
-              src={user.image}
-              alt={user.name}
+              src={users.image}
+              alt={users.name}
               width={36}
               height={36}
               className="object-cover w-full h-full"
             />
           </div>
-          <span className="text-lg font-semibold">{user.name}</span>
+          <span className="text-lg font-semibold">{users.name}</span>
         </div>
       </div>
     </header>
